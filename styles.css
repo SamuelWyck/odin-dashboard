@@ -158,7 +158,7 @@ header button {
 .main {
     background-color:  rgb(225, 225, 241);
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
     grid-template-rows: min-content 1fr;
     padding: 2.5rem 1.5rem 2.5rem 2rem;
     gap: 1rem 2rem
@@ -212,4 +212,57 @@ header button {
     grid-template-columns: repeat(3, min-content);
     gap: 1.5rem;
     margin-right: 1rem;
+}
+
+.side-section {
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    gap: 3rem;
+}
+
+.announcements {
+    display: grid;
+    grid-auto-rows: min-content;
+    gap: 1rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px -1px #c2c1c1;
+}
+
+.announcements-title  {
+    font-weight: bold;
+    margin-bottom: .25rem;
+}
+
+.announcements > :nth-child(2) {
+    border-top: 1px solid lightgray;
+    padding-top: 1rem;
+}
+
+.popular > div {
+    display: grid;
+    align-items: center;
+    gap: .5rem;
+    color: rgb(76, 76, 76);
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+}
+
+.popular p {
+    color: black;
+}
+
+.trending > p {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.popular {
+    background-color: white;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    display: grid;
+    gap: 1rem;
+    box-shadow: 1px 1px 8px -1px #c2c1c1;
 }
