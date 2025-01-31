@@ -156,4 +156,59 @@ header button {
 
 .main {
     background-color:  rgb(225, 225, 241);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: min-content 1fr;
+    padding: 2.5rem 1.5rem 2.5rem 2rem;
+    gap: 1rem 2rem
+}
+
+.main > p {
+    font-weight: 500;
+    font-size: 1.4rem;
+    justify-self: start;
+}
+
+.projects-section {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.project-card {
+    background-color: white;
+    min-height: 250px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px -1px #c2c1c1;
+    position: relative;
+    padding: 1.5rem;
+    color: rgb(66, 66, 66);
+    display: grid;
+    grid-template-rows: min-content 1fr;
+}
+
+.side-line {
+    position: absolute;
+    top: 0px;
+    left: 0px;;
+    width: 8px;
+    height: 100%;
+    background-color: #fac105;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+    color: black;
+    margin-bottom: .5rem;
+}
+
+.card-imgs {
+    align-self: end;
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: 1.5rem;
+    margin-right: 1rem;
 }
