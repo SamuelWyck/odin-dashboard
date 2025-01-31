@@ -17,7 +17,6 @@ ul {
 }
 
 
-
 .icon {
     width: 20px
 }
@@ -43,4 +42,18 @@ ul {
 .nav-icon {
     width: 30px;
     margin-right: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: min-content 1fr;
+}
+
+header {
+    grid-column: 2 / -1;
+}
+
+.sidebar {
+    grid-row: 1 / -1;
 }
