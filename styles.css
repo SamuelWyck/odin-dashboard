@@ -1,0 +1,13 @@
+.icon {
+    width: 20px
+}
+
+.profile-icon {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 70px;
+}
