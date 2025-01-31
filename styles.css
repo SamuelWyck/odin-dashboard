@@ -33,6 +33,7 @@ ul {
 
 .logo-pic {
     width: 50px;
+    transform: rotate(-90deg);
 }
 
 .invert {
@@ -41,13 +42,14 @@ ul {
 
 .nav-icon {
     width: 30px;
-    margin-right: 20px;
+    margin-right: 1.2rem;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: min-content 1fr;
+    min-height: 100vh;
 }
 
 header {
@@ -56,4 +58,33 @@ header {
 
 .sidebar {
     grid-row: 1 / -1;
+    background-color: #208cff;
+    color: white;
+    font-weight: bold;
+    padding-top: 1.4rem;
+    padding: 1.4rem 1.8rem 0 1.8rem;
+    display: grid;
+    grid-auto-rows: min-content;
+    gap: 3rem;
+    font-size: 1.4rem;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    font-size: 1.8rem;
+    gap: .8rem;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+}
+
+.sidebar li {
+    margin-bottom: 1.1rem;
+    margin-left: .6rem;
 }
