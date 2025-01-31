@@ -11,3 +11,16 @@
     border-radius: 50%;
     width: 70px;
 }
+
+.logo-pic {
+    width: 50px;
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.nav-icon {
+    width: 30px;
+    margin-right: 20px;
+}
